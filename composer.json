@@ -11,7 +11,8 @@
   },
   "autoload": {
     "psr-4": {
-      "hardphp\\snowflake\\": "src/"
+      "hardphp\\snowflake\\": "src/",
+      "think\\facade\\": "src/facade/"
     }
   },
   "extra": {
