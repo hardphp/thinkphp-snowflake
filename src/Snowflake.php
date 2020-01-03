@@ -44,8 +44,7 @@ class Snowflake extends Factory
         if (class_exists($class)) {
             $driver = $this->app->invokeClass($class, [$this->getConfig($driver)]);
 
-            return $driver->setApp($this->app)
-                ->setConnection($name);
+            return $driver;
         }
 
         throw new InvalidArgumentException("Driver [$driver] not supported.");
