@@ -14,6 +14,7 @@ namespace hardphp\snowflake;
 
 use InvalidArgumentException;
 use think\Factory;
+use think\helper\Str;
 
 /**
  * Class snowflake
