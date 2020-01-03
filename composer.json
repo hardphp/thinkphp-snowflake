@@ -21,7 +21,7 @@
         "hardphp\\snowflake\\Service"
       ],
       "config": {
-        "queue": "src/config.php"
+        "snowflake": "src/config.php"
       }
     }
   }
