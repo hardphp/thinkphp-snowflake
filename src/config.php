@@ -38,4 +38,5 @@ return [
             'timeout'          => 0,
             'persistent'       => false,
         ]
-    ];
+    ]
+];
