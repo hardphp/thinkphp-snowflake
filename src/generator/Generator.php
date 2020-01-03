@@ -70,7 +70,7 @@ abstract class Generator
         $this->lastTimestamp = $timestamp;
 
 
-        $interval     = $this->getTimeInterval() << $this->getTimestampLeftShift();
+        $interval     = $this->getTimeInterval($timestamp) << $this->getTimestampLeftShift();
         $dataCenterId = $this->getDataCenterId() << $this->getDataCenterIdShift();
         $workerId     = $this->getWorkerId() << $this->getWorkerIdShift();
 
@@ -167,9 +167,9 @@ abstract class Generator
         return $timestamp;
     }
 
-    public function getTimeInterval(): int
+    public function getTimeInterval($timestamp): int
     {
-        return $this->timestamp - $this->beginTimestamp;
+        return $timestamp - $this->beginTimestamp;
     }
 
     abstract public function getDataCenterId(): int;
